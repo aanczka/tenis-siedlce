@@ -3,7 +3,9 @@ import Example from "./Example";
 import MainText from "./MainText";
 import Slideshow2 from "./Slideshow2";
 import Achievements from "./Achievements";
+import Cennik from "./Cennik";
 import "./About.css";
+import CennikLetni from "./CennikLetni";
 
 function About() {
   return (
@@ -25,21 +27,24 @@ function About() {
               <li>Zajęcia 1h/1,5h</li>
             </ul>
             <div className="moreinfo">
-              <Example description={<>
-              Program treningowy ustalany jest indywidualnie dla każdego. Na pierwszych zajęciach ustalamy cele i intensywność treningów. 
-              <br/>
-              <br/>
-              Każdorazowo zależy mi na jak najszybszym wprowadzeniu osoby uczonej w „grę”, to znaczy wypracowaniu podstawowych umiejętności do utrzymania piłki w korcie i cieszenia się pięknem tenisa już od pierwszych zajęć. 
-              <br/>
-              <br/>
-              Najważniejsza jest dobra zabawa!
-              <br/>
-              <br/>
-              <b>Cena zajęć:</b>
-              <br/>
-              <br/>
-              - 100 zł/h - do negocjacji przy większej ilości zajęć
-              </>} />
+              <Example
+                description={
+                  <>
+                    Program treningowy ustalany jest indywidualnie dla każdego.
+                    Na pierwszych zajęciach ustalamy cele i intensywność
+                    treningów.
+                    <br />
+                    <br />
+                    Każdorazowo zależy mi na jak najszybszym wprowadzeniu osoby
+                    uczonej w „grę”, to znaczy wypracowaniu podstawowych
+                    umiejętności do utrzymania piłki w korcie i cieszenia się
+                    pięknem tenisa już od pierwszych zajęć.
+                    <br />
+                    <br />
+                    Najważniejsza jest dobra zabawa!
+                  </>
+                }
+              />
             </div>
           </div>
           <div>
@@ -55,33 +60,41 @@ function About() {
               <li>Zajęcia 1h/1,5h</li>
             </ul>
             <div className="moreinfo">
-              <Example description={<>Zajęcia grupowe dla dzieci/młodzieży/dorosłych odbywają się w grupach od 2 do 6 osób (w przypadku grup dzieci limit uczestników wynosi 8 osób).
- <br/>
- <br/>            
-<b>Ceny zajęć:</b>
-<br/>
-<br/>
-- 2 osoby - 70zł/h - 280zł za 4 zajęcia w miesiącu lub 100/1,5h - 400zł za 4 zajęcia w miesiącu
-<br/>
-- 3-4 osoby - 60zł/1h - 240 za 4 zajęcia w miesiącu lub 80/1,5h - 320zł za 4 spotkania w miesiącu
-<br/>
-- 5-6 osób (5-8 w przypadku dzieci) - 40zł/1h - 160zł za 4 zajęcia w miesiącu lub 60zł/1,5h - 240zł za 4 zajęcia w miesiącu
-<br/>
-<br/>
-Zajęcia dla dorosłych prowadzone są wg opracowanego przez Międzynarodową Federacje Tenisową (ITF) programu Tennis Xpress, którego idea pozwala początkującym graczom po ok 6 tygodniach (w cyklu półtoragodzinnym) przyswoić podstawy takich umiejętności jak:
-<br/>
-<br/>
-- podstawowe umiejętności techniczne w zakresie gry z głębi kortu, serwisu i woleja
-<br/>
-- czucie się pewnie grając piłką zieloną na punkty na pełnym korcie
-<br/>
-- znajomość podstawowych elementów taktyki
-<br/>
-- zapoznanie z przepisami gry
-<br/>
-<br/>
-Zajęcia dla dzieci odbywają się w oparciu o program Międzynarodowej Federacji Tenisowej (ITF) Tenis 10.
-Więcej informacji o programie <a href="https://tenis10.pl/1_328/o-programie-.aspx">TUTAJ</a></>} />
+              <Example
+                description={
+                  <>
+                    Zajęcia grupowe dla dzieci/młodzieży/dorosłych odbywają się
+                    w grupach od 2 do 6 osób (w przypadku grup dzieci limit
+                    uczestników wynosi 8 osób).
+                    <br />
+                    <br />
+                    Zajęcia dla dorosłych prowadzone są wg opracowanego przez
+                    Międzynarodową Federacje Tenisową (ITF) programu Tennis
+                    Xpress, którego idea pozwala początkującym graczom po ok 6
+                    tygodniach (w cyklu półtoragodzinnym) przyswoić podstawy
+                    takich umiejętności jak:
+                    <br />
+                    <br />
+                    - podstawowe umiejętności techniczne w zakresie gry z głębi
+                    kortu, serwisu i woleja
+                    <br />
+                    - czucie się pewnie grając piłką zieloną na punkty na pełnym
+                    korcie
+                    <br />
+                    - znajomość podstawowych elementów taktyki
+                    <br />
+                    - zapoznanie z przepisami gry
+                    <br />
+                    <br />
+                    Zajęcia dla dzieci odbywają się w oparciu o program
+                    Międzynarodowej Federacji Tenisowej (ITF) Tenis 10. Więcej
+                    informacji o programie{" "}
+                    <a href="https://tenis10.pl/1_328/o-programie-.aspx">
+                      TUTAJ
+                    </a>
+                  </>
+                }
+              />
             </div>
           </div>
         </div>
@@ -99,8 +112,19 @@ Więcej informacji o programie <a href="https://tenis10.pl/1_328/o-programie-.as
           zawodników będących ścisłą czołówką w Polsce a niekiedy na świecie.
           <br />
           <br />
-          <Achievements />
+          <div className="achievements-more">
+            Od 2011 roku, studiując na AWF w Warszawie zacząłem swoją przygodę z
+            pracą trenerską. Przez lata, pracując na kortach w Warszawie, Łodzi
+            oraz Siedlcach miałem okazje szkolić dorosłych, młodzież oraz dzieci
+            współpracując przy tym ze świetnymi trenerami zawodników WTA oraz
+            ITF.
+          </div>
         </p>
+      </section>
+      <section id="cennik">
+        <h3 className="about-header">Cennik</h3>
+        <Cennik />
+        <CennikLetni />
       </section>
       <section id="kontakt">
         <h2 className="about-header">Kontakt</h2>
@@ -127,6 +151,13 @@ Więcej informacji o programie <a href="https://tenis10.pl/1_328/o-programie-.as
               />{" "}
               wojciech.jobczyk@gmail.com
             </p>
+            <p>
+              <img
+                className="icon"
+                src="https://res.cloudinary.com/dnk61xxgl/image/upload/v1667774442/instagram_rnumfq.png"
+              />{" "}
+              @set_tenis_siedlce
+            </p>
           </div>
           <div className="mapa">
             <h3>Jak dojechać?</h3>
@@ -142,10 +173,7 @@ Więcej informacji o programie <a href="https://tenis10.pl/1_328/o-programie-.as
         </div>
       </section>
       <div className="footer">
-        <p>
-          Zaprojektowała{" "}
-          <a href="https://www.linkedin.com/in/anna-maria-mazurek">Anna</a>
-        </p>
+        <p></p>
       </div>
     </div>
   );
