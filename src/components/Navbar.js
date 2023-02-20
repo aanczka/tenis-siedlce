@@ -22,6 +22,9 @@ function NavbarTop() {
             <Nav.Link className="links" href="#cennik">
               CENNIK
             </Nav.Link>
+            <Nav.Link className="links" href="#zapisy">
+              ZAPISY
+            </Nav.Link>
             <Nav.Link className="links" href="#kontakt">
               KONTAKT
             </Nav.Link>

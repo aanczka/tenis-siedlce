@@ -6,6 +6,7 @@ import Achievements from "./Achievements";
 import Cennik from "./Cennik";
 import "./About.css";
 import CennikLetni from "./CennikLetni";
+import Zapisy from "./Zapisy";
 
 function About() {
   return (
@@ -125,6 +126,10 @@ function About() {
         <h3 className="about-header">Cennik</h3>
         <Cennik />
         <CennikLetni />
+      </section>
+      <section id="zapisy">
+        <h3 className="about-header">Zapisy</h3>
+        <Zapisy />
       </section>
       <section id="kontakt">
         <h2 className="about-header">Kontakt</h2>
