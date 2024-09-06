@@ -22,26 +22,26 @@ function CennikLetni() {
       <Collapse in={open}>
         <div id="example-collapse-text">
           <div className="achievements-more">
-            <li>Wynajem kortu:</li>
-            <li>Poniedziałek - piątek</li>
+            <b>Wynajem kortu:</b>
+            <br />
+            <br />
+            Poniedziałek - piątek
             <li>08:00 - 16:00 - 40 zł/h</li>
             <li>16:00 - 00:00 - 50 zł/h</li>
             <br />
-            <br />
-            <li>Sobota - niedziela</li>
+            Sobota - niedziela
             <li>40 zł/h</li>
             <br />
             <br />
             <b>Treningi (1h):</b>
             <br />
             <br />
-            <li>Trening indywidualny (1-2 os. na treningu):</li>
-            <li>*140 zł/h - 180 zł/h</li>
+            <li>Trening indywidualny (1-2 os. na treningu): *140 zł/h - 180 zł/h</li>
             <br />
-            <li>*zależne od wyboru trenera</li>
+            *zależne od wyboru trenera
             <br />
             <br />
-            <li>Treningi grupowe:</li>
+            Treningi grupowe:
             <li>60 zł/1h</li>
             <li>70 zł/1,5h</li>
           </div>
