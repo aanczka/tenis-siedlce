@@ -22,17 +22,28 @@ function CennikLetni() {
       <Collapse in={open}>
         <div id="example-collapse-text">
           <div className="achievements-more">
-            <li>Wynajem kortu bez oświetlenia - 30 zł</li>
-            <li>Wynajem kortu z oświetleniem - 50 zł</li>
+            <li>Wynajem kortu:</li>
+            <li>Poniedziałek - piątek</li>
+            <li>08:00 - 16:00 - 40 zł/h</li>
+            <li>16:00 - 00:00 - 50 zł/h</li>
+            <br />
+            <br />
+            <li>Sobota - niedziela</li>
+            <li>40 zł/h</li>
             <br />
             <br />
             <b>Treningi (1h):</b>
             <br />
             <br />
-            <li>Trening indywidualny 100 zł + kort</li>
-            <li>Trening 2 os dorosłe - 120 zł + kort</li>
-            <li>Trening 3 os dorosłe - 140 zł + kort</li>
-            <li>Trening 4 os dorosłe - 160 zł + kort</li>
+            <li>Trening indywidualny (1-2 os. na treningu):</li>
+            <li>*140 zł/h - 180 zł/h</li>
+            <br />
+            <li>*zależne od wyboru trenera</li>
+            <br />
+            <br />
+            <li>Treningi grupowe:</li>
+            <li>60 zł/1h</li>
+            <li>70 zł/1,5h</li>
           </div>
         </div>
       </Collapse>
